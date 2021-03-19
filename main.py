@@ -1,9 +1,16 @@
 import  DatabaseHandler
 import restApiHandler
 
+#Attempting connection to API
+if(restApiHandler.check_conenction_to_api()):
+    print("Connection to API working ! ")
+else:
+    print("API down")
 
-#making call to the rest API
-data =  restApiHandler.load_data()
+#checking our DB is app
+DatabaseHandler.check_database_connection()
 
-print (data)
+
+
+print(restApiHandler.get_pet_byId(2))
 
