@@ -20,9 +20,6 @@ def get_pet_byId(id):
     return response_json
 
 
-
-
-
 def load_data():
     #connect to the petstore API and send request to get pet
     data_array = []
